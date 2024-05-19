@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Bine ați venit la Click Studios - hub-ul creativ unde viziunea devine realitate. Suntem mai mult decât o simplă agenție de publicitate din Baia Mare; suntem arhitecții ideilor inovatoare, transformând conceptele în campanii de succes și pasiunea în proiecte memorabile. La Click Studios, ne străduim să depășim limitele convenționale și să creăm experiențe unice și memorabile pentru clienții noștri." />
+    <meta name="description" content="Bine ați venit la Click Studios, agenție de publicitate din Baia Mare. Specializați în publicitate online, publicitate digitală, digital marketing, SEO, spoturi audio și web development. Transformăm viziunea în realitate prin campanii de succes și proiecte memorabile." />
     <meta name="keywords"
         content="Click Studios, agenție publicitate, Baia Mare, producție muzicală, videoclipuri muzicale, branding, dezvoltare web, marketing, inovație, creativitate, campanii publicitare" />
     
@@ -17,11 +17,12 @@
 
     <title>Click Studios - Hub-ul creativ pentru viziunea ta</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <!-- Alpine.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@latest/dist/cdn.min.js" defer></script>
 </head>
 
 
-<body class="font-sans bg-gray-100">
-
+<body class="font-sans bg-gray-100" x-data="{ scrollToTop: false }" x-on:scroll.window="scrollToTop = window.scrollY > 100">
     <section class="relative flex items-center justify-center h-screen text-white showcase">
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden video-container">
             <video src="/assets/video_background.mp4" autoplay muted loop class="absolute object-cover min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"></video>
@@ -353,7 +354,10 @@ Administrare și creștere a audienței pe canalele de social media prin postăr
           <li>Logo Unic și Memorabil</li>
           <li>Website Atractiv și Ușor de Navigat</li>
           <li>Conținut Video Captivant pentru Platforme Sociale si Gestionarea acestora</li>
-      
+          <li class="text-gray-700">     
+   Optimizare SEO pentru a ajunge organic în primele pagini ale căutărilor. 
+          
+        </li>
         </ul>
         <br>
         
@@ -405,32 +409,27 @@ Administrare și creștere a audienței pe canalele de social media prin postăr
 
 
 <!--Contact-->
-<footer id="contact" class="p-6 text-center bg-gray-100">
-  <div class="max-w-md mx-auto">
-    <strong>Colaborați cu Noi:</strong> <br>
-                  Dacă sunteți interesați să colaborați cu Click Studios pentru producția de conținut media sau alte servicii de publicitate și marketing digital, nu ezitați să ne contactați la:
-    <p class="m-2 text-gray-700">
-      <span class="font-bold">Email:</span> contact@clickstudios.com <br>
-      <span class="font-bold">Telefon:</span> +4 0734 411 115 <br>
-      <span class="font-bold">Adresa:</span> Nisiparilor 35, Baia-Mare, Maramures
-    </p>
-    <hr class="my-6 border-t border-gray-300">
-    <p class="text-gray-700">
-      &copy; <span id="currentYear"></span> Click Studios. Toate drepturile rezervate.
-    </p>
-  </div>
-</footer>
+<footer id="contact" class="p-6 text-center bg-gray-100" x-data>
+    <div class="max-w-md mx-auto">
+      <strong>Colaborați cu Noi:</strong> <br>
+      Dacă sunteți interesați să colaborați cu Click Studios pentru producția de conținut media sau alte servicii de publicitate și marketing digital, nu ezitați să ne contactați la:
+      <p class="m-2 text-gray-700">
+        <span class="font-bold">Email:</span> contact@clickstudios.com <br>
+        <span class="font-bold">Telefon:</span> +4 0734 411 115 <br>
+        <span class="font-bold">Adresa:</span> Nisiparilor 35, Baia-Mare, Maramures
+      </p>
+      <hr class="my-6 border-t border-gray-300">
+      <p class="text-gray-700">
+        &copy; <span x-text="new Date().getFullYear()"></span> Click Studios. Toate drepturile rezervate.
+      </p>
+    </div>
+  </footer>
 
-<script>
-  // Get the current year
-  var currentYear = new Date().getFullYear();
-
-  // Update the content of the span element with the current year
-  document.getElementById("currentYear").textContent = currentYear;
-</script>
-
-
-
+ <!-- Arrow Up Button -->
+ <button x-show="scrollToTop" @click="window.scrollTo({ top: 0, behavior: 'smooth' })" class="fixed flex items-center justify-center w-10 h-10 text-white bg-gray-800 rounded-full bottom-4 right-4 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-600">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+  </svg>
+</button>
 </body>
-
 </html>
