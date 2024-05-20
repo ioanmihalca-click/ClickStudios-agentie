@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bine ați venit la Click Studios, agenție de publicitate din Baia Mare. Specializați în publicitate online, publicitate digitală, digital marketing, SEO, spoturi audio și web development. Transformăm viziunea în realitate prin campanii de succes și proiecte memorabile." />
+    <meta name="description" content="Click Studios Digital, agenție de publicitate din Baia Mare. Specializați în productie publicitara, publicitate digitală, digital marketing, SEO, web development și productie audio-video." />
     <meta name="keywords"
-        content="Click Studios, agenție publicitate, Baia Mare, producție muzicală, videoclipuri muzicale, branding, dezvoltare web, marketing, inovație, creativitate, campanii publicitare" />
+        content="Click Studios, agenție publicitate, Baia Mare, Maramures, producție muzicală, spoturi publicitare, videoclipuri muzicale, branding, dezvoltare web, marketing, creativitate, campanii publicitare, publicitate digitală, digital marketing, SEO" />
     
     <!--Open Graph Image - Size of image. Any size up to 300. Anything above 300px will not work in WhatsApp -->
     <meta property="og:image" content="https://drive.google.com/uc?export=view&id=1niNmZM6MCCWp2NG08SZ7dbhQPJ1Z-1EX">
@@ -15,32 +15,37 @@
 <meta property="og:image:height" content="300">
 
     <title>Click Studios - Hub-ul creativ pentru viziunea ta</title>
-     <!-- Add Favicon -->
-     <link rel="icon" href="/assets/click studios logo.jpg" type="image/x-icon">
+    <!-- Add Favicon -->
+<link rel="icon" href="/assets/click_studios_logo.jpg" type="image/x-icon">
+<!-- Add Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/click studios logo.jpg">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-   <!-- Alpine Plugins -->
-<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
 
 <!-- Alpine Core -->
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 
 <body class="font-sans bg-gray-100" x-data="{ scrollToTop: false }" x-on:scroll.window="scrollToTop = window.scrollY > 100">
+
+
+
     <section class="relative flex items-center justify-center h-screen text-white showcase">
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden video-container">
             <video src="/assets/video_background.mp4" autoplay muted loop class="absolute object-cover min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"></video>
             <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
         </div>
+
         <div class="z-10 px-2 text-center content">
-            <h1 class="mb-4 text-5xl md:text-5xl md:font-normal">Click Studios <br><span class="text-xl text-gray-100 md:text-3xl md:font-light">Hub-ul creativ pentru viziunea ta</span> </h1>
+            <h1 class="mb-4 text-5xl md:text-5xl md:font-normal">Click Studios<br><span class="text-xl text-gray-100 md:text-3xl md:font-light">Hub-ul creativ pentru viziunea ta</span> </h1>
             <h3 class="mb-8 text-sm text-gray-100 md:text-lg">Ca o punte între artă și tehnologie, suntem aici pentru a vă ghida în călătoria către
                 succesul digital.</h3>
                 
-                <div x-data="{ shown: false }" x-intersect="shown = true" x-intersect:leave="shown = false">
-                  <div x-show="shown" x-transition:enter="transition ease-out duration-1000 transform" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100">
-
+                <div data-aos="zoom-in">
+                
                <div class="flex flex-col items-center ">
                 <a href="#about"
                 class="inline-block w-40 px-8 py-1 mt-4 text-white transition duration-300 ease-in-out transform border border-white rounded-md btn bg-primary-color hover:scale-95 hover:bg-gray-800 hover:shadow-md">Despre noi</a>
@@ -53,11 +58,12 @@
               </div>
         </div>
         </div>
-        </div>
+        
     </section>
 
     <section id="about" class="px-4 py-2 text-center">
-       
+      <div data-aos="zoom-in">
+     
         <p class="max-w-3xl mx-auto mb-8 text-lg leading-relaxed text-left">
             <strong class="block mt-8 mb-6 text-2xl text-gray-900">Cine suntem?</strong>
             <span class="text-blue-500">✗</span> Suntem mai mult decât o simplă agenție de publicitate din Baia Mare; suntem
@@ -77,12 +83,17 @@
             ajuta să vă atingeți obiectivele de marketing și publicitate, contactați-ne și împreună vom construi ceva
             extraordinar!
         </p>
+        </div>
+      
     </section>
 
   <!--Servicii-->
   <div id="servicii" class="grid items-center grid-cols-1 text-center md:grid-cols-2 lg:grid-cols-3">
 
 <!-- Service Block 1: Spoturi Audio și Video Publicitare -->
+
+<div data-aos="fade-right">
+
 <div class="flex w-full h-full px-4 lg:px-6">
     <div class="px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
         <div class="inline-block mb-4 text-gray-900">
@@ -98,9 +109,13 @@
           </p>
       </div>
   </div>
+</div>
+
   <!-- end service block -->
 
   <!-- Service Block 2: Dezvoltare de Website-uri și Aplicații Web -->
+
+  <div data-aos="fade-down">
   
   <div class="flex w-full h-full px-4 lg:px-6">
     <div class="px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
@@ -112,12 +127,16 @@
               </svg>
           </div>
           <h3 class="mb-2 text-lg font-semibold leading-normal text-black">Dezvoltare de Website-uri și Aplicații Web</h3>
-          <p class="text-gray-500">Creare și dezvoltare de website-uri personalizate, de la pagini de prezentare la site-uri de e-commerce. <br><br>Dezvoltare de aplicații web complexe pentru diferite nevoi și industrii.</p>
+          <p class="text-gray-500">Creare și dezvoltare de website-uri personalizate, de la pagini de prezentare la site-uri de e-commerce si aplicatii mobile. <br><br>Dezvoltare de aplicații web complexe pentru diferite nevoi și industrii. <br><br>
+          </p>
       </div>
+  </div>
   </div>
   <!-- end service block -->
   
   <!-- Service Block 3: Design și Implementare de Branding -->
+  <div data-aos="fade-left">
+
   <div class="flex w-full h-full px-4 lg:px-6">
     <div class="px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
         <div class="inline-block mb-4 text-gray-900">
@@ -128,12 +147,13 @@
               </svg>
           </div>
           <h3 class="mb-2 text-lg font-semibold leading-normal text-black">Design și Implementare de Branding</h3>
-          <p class="text-gray-500">Design de logo-uri și creare de identitate vizuală și branding pentru companii și evenimente.<br><br>Elaborare și implementare de strategii digitale personalizate pentru creșterea vizibilității online.</p>
+          <p class="text-gray-500">Design de logo-uri și creare de identitate vizuală și branding pentru companii și evenimente.<br><br>Elaborare și implementare de strategii digitale personalizate pentru creșterea vizibilității online. <br><br></p>
       </div>
   </div>
-
+  </div>
 
 <!-- Service Block 4: Producție Muzicală și Audiovizuală -->
+<div data-aos="fade-right">
 <div class="flex w-full h-full px-4 lg:px-6">
   <div class="px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
       <div class="inline-block mb-4 text-gray-900">
@@ -145,12 +165,14 @@
       <h3 class="mb-2 text-lg font-semibold leading-normal text-black">Producție Muzicală și Audiovizuală</h3>
       <p class="text-gray-500">Creare și înregistrare de piese muzicale originale, servicii de mixing si mastering, spoturi audio etc. <br> <br>
   
-        Producție și editare de materiale audiovizuale pentru diverse scopuri: reclame, videoclipuri, podcast-uri etc.  </p>
+        Producție și editare de materiale audiovizuale pentru diverse scopuri: reclame, videoclipuri, podcast-uri etc. <br><br><br> </p>
     </div>
   </div>
-
+</div>
 
 <!-- Service Block 5: Fotografie Profesională și Retușare Foto -->
+<div data-aos="fade-down">
+
 <div class="flex w-full h-full px-4 lg:px-6">
   <div class="px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
       <div class="inline-block mb-4 text-gray-900">
@@ -163,10 +185,11 @@
     <p class="text-gray-500">Sedinte foto profesionale pentru diverse evenimente și produse.<br><br>Retușare foto și editare avansată pentru imagini de înaltă calitate.<br><br>Servicii de fotografie de produs pentru magazine online și campanii publicitare.</p>
   </div>
 </div>
-
+</div>
 
 
 <!-- Service Block 6: Videoclipuri Muzicale și Campanii Publicitare Video -->
+<div data-aos="fade-left">
 <div class="flex w-full h-full px-4 lg:px-6">
   <div class="px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
       <div class="inline-block mb-4 text-gray-900">
@@ -183,8 +206,11 @@
     Creare și editare de conținut video scurt și captivant pentru platformele populare de social media:YouTube Shorts, Instagram Reels și TikTok Videos  </p>
 </div>
 </div>
+</div>
 
 <!-- Service Block 7: Implementare și Administrare Canale de Social Media  -->
+<div data-aos="fade-right">
+
 <div class="flex w-full h-full px-4 lg:px-6">
   <div class="px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
       <div class="inline-block mb-4 text-gray-900">
@@ -199,11 +225,12 @@
 <h3 class="mb-2 text-lg font-semibold leading-normal text-black">Implementare și Administrare Canale de Social Media</h3>
 <p class="text-gray-500">Creare și optimizare de profiluri pe diverse platforme de socializare (YouTube, Instagram, Facebook, TikTok etc.). <br><br>
 Administrare și creștere a audienței pe canalele de social media prin postări regulate și interacțiune cu urmăritorii. </p>
-
+  </div>
 </div>
 </div>
 
 <!-- Service Block 8: Servicii de SEO (Optimizare pentru Motoarele de Căutare)  -->
+<div data-aos="fade-up">
 <div class="flex w-full h-full px-4 lg:px-6">
   <div class="px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
       <div class="inline-block mb-4 text-gray-900">
@@ -214,12 +241,15 @@ Administrare și creștere a audienței pe canalele de social media prin postăr
 </div>
 
 <h3 class="mb-2 text-lg font-semibold leading-normal text-black">Servicii de SEO (Optimizare pentru Motoarele de Căutare)</h3>
-<p class="text-gray-500">Implementarea de tehnici și strategii de optimizare pentru motoarele de căutare pentru a crește vizibilitatea și clasamentul website-urilor și aplicațiilor web în rezultatele căutărilor organice, generând astfel mai mult trafic și potențiali clienți pentru afacerile clienților tăi. <br>
+<p class="text-gray-500">Implementarea de tehnici și strategii de optimizare pentru motoarele de căutare pentru a crește vizibilitatea și clasamentul website-urilor și aplicațiilor web în rezultatele căutărilor organice, generând astfel mai mult trafic și potențiali clienți pentru afacerile clienților tăi. <br> <br>
 </p>
+</div>
 </div>
 </div>
 
 <!-- Service Block 9: Creare și gestionare de campanii de publicitate online -->
+<div data-aos="fade-left">
+
 <div class="flex w-full h-full px-4 lg:px-6">
   <div class="px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
       <div class="inline-block mb-4 text-gray-900">
@@ -232,6 +262,7 @@ Administrare și creștere a audienței pe canalele de social media prin postăr
   <h3 class="mb-2 text-lg font-semibold leading-normal text-black">Creare și gestionare de campanii de publicitate online</h3>
   <p class="text-gray-500">Dezvoltarea și implementarea de campanii publicitare eficiente pe platforme precum Google Ads, Facebook Ads, Instagram Ads etc., pentru a ajuta afacerile să-și promoveze produsele și serviciile către audiențele relevante și să obțină rezultate tangibile în ceea ce privește generarea de lead-uri și creșterea vânzărilor. <br>
    </p>
+</div>
 </div>
 </div>
 
@@ -247,6 +278,7 @@ Administrare și creștere a audienței pe canalele de social media prin postăr
     <h2 class="mb-8 text-3xl font-bold text-center">Portofoliu</h2>
     <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
       <!-- Portfolio Item 1 -->
+      <div data-aos="fade-right">
       <a href="portfolio-item1.html" class="hover:no-underline">
         <div class="px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
           <img src="/assets/clickmusicapp.jpg" alt="Click Music Streaming App" class="w-full h-auto transition duration-300 ease-in-out transform rounded-lg hover:scale-105 hover:opacity-80">
@@ -275,7 +307,45 @@ Administrare și creștere a audienței pe canalele de social media prin postăr
           </div>
         </div>
       </a>
-         <!-- Portfolio Item 2 -->
+    </div>
+
+    <!-- Portfolio Item 2 -->
+    <div data-aos="fade-down">
+      <a href="https://www.youtube.com/@IoanaMihalca" class="hover:no-underline">
+        <div class="px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
+            <img src="/assets/podcastmorosenesc.jpg" alt="Productie Podcast Morosenesc cu Ioana Mihalca" class="w-full h-auto transition duration-300 ease-in-out transform rounded-lg hover:scale-105 hover:opacity-80">
+            <div class="p-4">
+                <h3 class="py-2 mb-2 text-lg font-semibold">Podcast Morosenesc cu Ioana Mihalca</h3>
+                <p class="text-base leading-relaxed text-left">
+                    <span class="text-blue-500">✗</span> "Podcast Morosenesc cu Ioana Mihalca" este un proiect de succes din portofoliul Click Studios, dedicat explorării povestirilor autentice și discuțiilor captivante. <br> <br>
+                    <span class="text-blue-500">✗</span> Acest podcast aduce în fața ascultătorilor povești de viață inspiratoare și conversații profunde cu personalități remarcabile din diverse domenii. <br><br>
+            
+                    <strong>Caracteristici Cheie:</strong>
+            
+                    <ul class="pl-6 mt-2 text-left list-disc">
+                      <li><strong>Înregistrare și Editare:</strong> Utilizarea echipamentelor de ultimă generație pentru a asigura o calitate impecabilă a sunetului și o editare profesionistă. <br><br>
+                      </li>
+                      <li>
+                        <strong>Distribuție și Promovare:</strong> Implementarea unei strategii de marketing digital pentru a maximiza audiența și impactul podcastului. Disponibil pe Principalele Platforme de Podcasting(Spotify, Apple Podcasts, Google Podcasts) <br><br>
+  
+                      </li>
+                        <li>Strategii Eficiente de Marketing Digital</li>
+                    
+                        
+                    </ul>
+                  
+                    <br>
+                    <strong>Impactul asupra Brandului:</strong> <br> 
+                    <span class="text-blue-500">✗</span>"Podcast Morosenesc cu Ioana Mihalca" a contribuit la consolidarea brandului Click Studios, demonstrând capacitatea noastră de a crea conținut de calitate și de a gestiona proiecte media complexe. Acest proiect este un exemplu perfect al abilității noastre de a combina creativitatea si productia cu strategia de marketing digital pentru a obține rezultate remarcabile. <br><br>
+                   
+                </p>
+            </div>
+        </div>
+    </a>
+      </div>
+
+         <!-- Portfolio Item 3 -->
+         <div data-aos="fade-left">
          <a href="https://www.youtube.com/@clickmusicromania" class="hover:no-underline">
           <div class="px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
             <img src="/assets/click youtube.jpg" alt="Click Music canal youtube" class="w-full h-auto transition duration-300 ease-in-out transform rounded-lg hover:scale-105 hover:opacity-80">
@@ -304,47 +374,29 @@ Administrare și creștere a audienței pe canalele de social media prin postăr
             </div>
           </div>
         </a>
+         </div>
 
-    <!-- Portfolio Item 3 -->
-    <a href="https://www.youtube.com/@IoanaMihalca" class="hover:no-underline">
-      <div class="px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
-          <img src="/assets/podcastmorosenesc.jpg" alt="Productie Podcast Morosenesc cu Ioana Mihalca" class="w-full h-auto transition duration-300 ease-in-out transform rounded-lg hover:scale-105 hover:opacity-80">
-          <div class="p-4">
-              <h3 class="py-2 mb-2 text-lg font-semibold">Podcast Morosenesc cu Ioana Mihalca</h3>
-              <p class="text-base leading-relaxed text-left">
-                  <span class="text-blue-500">✗</span> "Podcast Morosenesc cu Ioana Mihalca" este un proiect de succes din portofoliul Click Studios, dedicat explorării povestirilor autentice și discuțiilor captivante. <br> <br>
-                  <span class="text-blue-500">✗</span> Acest podcast aduce în fața ascultătorilor povești de viață inspiratoare și conversații profunde cu personalități remarcabile din diverse domenii. <br><br>
-          
-                  <strong>Caracteristici Cheie:</strong>
-          
-                  <ul class="pl-6 mt-2 text-left list-disc">
-                    <li><strong>Înregistrare și Editare:</strong> Utilizarea echipamentelor de ultimă generație pentru a asigura o calitate impecabilă a sunetului și o editare profesionistă. <br><br>
-                    </li>
-                    <li>
-                      <strong>Distribuție și Promovare:</strong> Implementarea unei strategii de marketing digital pentru a maximiza audiența și impactul podcastului. Disponibil pe Principalele Platforme de Podcasting <br><br>
+    
 
-                    </li>
-                      <li>Strategii Eficiente de Marketing Digital</li>
-                  
-                      
-                  </ul>
-                  <br>
-                  <strong>Rezultate Obținute:</strong> <br>
-                  <ul class="pl-6 mt-2 text-left list-disc">
-                      <li><strong>Creșterea Audienței:</strong> O creștere constantă a numărului de ascultători și abonați pe platformele majore de podcasting (Spotify, Apple Podcasts, Google Podcasts).</li>
-                      <li><strong>Engagement Ridicat:</strong> Interacțiuni semnificative cu ascultătorii pe rețelele de socializare, reflectând un nivel ridicat de implicare și satisfacție.</li>
-                  </ul>
-                  <br>
-                  <strong>Impactul asupra Brandului:</strong> <br> 
-                  <span class="text-blue-500">✗</span>"Podcast Morosenesc cu Ioana Mihalca" a contribuit la consolidarea brandului Click Studios, demonstrând capacitatea noastră de a crea conținut de calitate și de a gestiona proiecte media complexe. Acest proiect este un exemplu perfect al abilității noastre de a combina creativitatea si productia cu strategia de marketing digital pentru a obține rezultate remarcabile. <br><br>
-                 
-              </p>
-          </div>
-      </div>
-  </a>
-  
-<!--Portofolio item 4-->
+<!-- Portfolio Item 4-->
+<div data-aos="fade-right">
+<a href="#" class="hover:no-underline">
+  <div class="px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
+    <img src="/assets/digital-marketing.jpg" alt="marketing digital baia-mare" class="w-full h-auto transition duration-300 ease-in-out transform rounded-lg hover:scale-105 hover:opacity-80">
+    <div class="p-4">
+      <h3 class="py-2 mb-2 text-lg font-semibold">Proiectul tău → Aici</h3>
+      <p class="text-base leading-relaxed text-left">
+        <span class="text-blue-500">✗</span> Suntem mereu în căutarea unor noi provocări și oportunități de a contribui la proiecte creative și inovatoare. <br> <br>
+        <span class="text-blue-500">✗</span> Urmează să lansăm proiecte captivante în domenii precum dezvoltare web, branding, marketing digital, productie publicitara, producție audio si video și multe altele. <br> <br>
+        <span class="text-blue-500">✗</span> Dacă ai o idee sau un proiect la care crezi că putem aduce valoare și creativitate, nu ezita să ne contactezi. Suntem aici pentru a te ghitda incalatoria spre succesul digital.
+      </p>
+    </div>
+  </div>
+</a>
+</div>
 
+<!--Portofolio item 5-->
+<div data-aos="fade-up">
 <a href="https://csvictoriamm.ro/" class="hover:no-underline">
   <div class="px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
     <img src="/assets/victoria-maramures.jpg" alt="Branding Club Sportiv Victoria Maramureș" class="w-full h-auto transition duration-300 ease-in-out transform rounded-lg hover:scale-105 hover:opacity-80">
@@ -362,7 +414,7 @@ Administrare și creștere a audienței pe canalele de social media prin postăr
           <li>Logo Unic și Memorabil</li>
           <li>Website Atractiv și Ușor de Navigat</li>
           <li>Conținut Video Captivant pentru Platforme Sociale si Gestionarea acestora</li>
-          <li class="text-gray-700">     
+          <li class="font-semibold">     
    Optimizare SEO pentru a ajunge organic în primele pagini ale căutărilor. 
           
         </li>
@@ -377,23 +429,11 @@ Administrare și creștere a audienței pe canalele de social media prin postăr
     </div>
   </div>
 </a>
+</div>
 
-<!-- Portfolio Item 5-->
-<a href="#" class="hover:no-underline">
-  <div class="px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
-    <img src="/assets/digital-marketing.jpg" alt="marketing digital baia-mare" class="w-full h-auto transition duration-300 ease-in-out transform rounded-lg hover:scale-105 hover:opacity-80">
-    <div class="p-4">
-      <h3 class="py-2 mb-2 text-lg font-semibold">Proiectul tău → Aici</h3>
-      <p class="text-base leading-relaxed text-left">
-        <span class="text-blue-500">✗</span> Suntem mereu în căutarea unor noi provocări și oportunități de a contribui la proiecte creative și inovatoare. <br> <br>
-        <span class="text-blue-500">✗</span> Urmează să lansăm proiecte captivante în domenii precum dezvoltare web, branding, marketing digital, productie publicitara, producție audio si video și multe altele. <br> <br>
-        <span class="text-blue-500">✗</span> Dacă ai o idee sau un proiect la care crezi că putem aduce valoare și creativitate, nu ezita să ne contactezi. Suntem aici pentru a te ghitda incalatoria spre succesul digital.
-      </p>
-    </div>
-  </div>
-</a>
 
 <!-- Portfolio Item 6-->
+<div data-aos="fade-left">
 <a href="#" class="hover:no-underline">
   <div class="px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
     <img src="/assets/digital-marketing2.jpg" alt="digital marketing baia mare" class="w-full h-auto transition duration-300 ease-in-out transform rounded-lg hover:scale-105 hover:opacity-80">
@@ -407,7 +447,7 @@ Administrare și creștere a audienței pe canalele de social media prin postăr
     </div>
   </div>
 </a>
-
+</div>
 
 
    <!--Alte itemuri-->
@@ -415,23 +455,73 @@ Administrare și creștere a audienței pe canalele de social media prin postăr
   </div>
 </section>
 
-
-<!--Contact-->
-<footer id="contact" class="p-6 text-center bg-gray-100" x-data>
-    <div class="max-w-md mx-auto">
-      <strong>Colaborați cu Noi:</strong> <br>
-      Dacă sunteți interesați să colaborați cu Click Studios pentru producția de conținut media sau alte servicii de publicitate și marketing digital, nu ezitați să ne contactați la:
-      <p class="m-2 text-gray-700">
-        <span class="font-bold">Email:</span> contact@clickstudios.com <br>
-        <span class="font-bold">Telefon:</span> +4 0734 411 115 <br>
-        <span class="font-bold">Adresa:</span> Nisiparilor 35, Baia-Mare, Maramures
-      </p>
-      <hr class="my-6 border-t border-gray-300">
-      <p class="text-gray-700">
-        &copy; <span x-text="new Date().getFullYear()"></span> Click Studios. Toate drepturile rezervate.
-      </p>
+<!-- Team Section & Contact -->
+<div id="contact" class="mt-8">
+  <div class="max-w-4xl px-8 py-8 mx-auto transition duration-300 ease-in-out transform hover:-translate-y-2">
+    <h2 class="mb-12 text-2xl font-semibold text-center">Echipa Noastră:</h2>
+    <div data-aos="fade-up">
+    <div class="flex flex-wrap justify-center gap-8">
+      <!-- Member 1 -->
+     
+      <div class="w-64 p-4 text-center transition duration-300 ease-in-out transform bg-gray-100 rounded-lg hover:-translate-y-2">
+        <img src="/assets/Echipa - Ioan.jpg" alt="Ioan Mihalca" class="w-32 h-32 mx-auto mb-4 transition duration-300 ease-in-out transform rounded-full hover:scale-105 hover:opacity-80">
+        <h3 class="text-lg font-semibold">Ioan Mihalca</h3>
+        <p class="text-sm text-gray-700">Founder & CEO</p>
+        <p class="mt-2 text-sm text-gray-600">Expert în strategii digitale, producție audio, dezvoltare web si optimizare pentru motoarele de căutare(SEO).</p>
+      </div>
+      <!-- Member 2 -->
+      <div class="w-64 p-4 text-center transition duration-300 ease-in-out transform bg-gray-100 rounded-lg hover:-translate-y-2">
+        <img src="/assets/Echipa - Andreea.jpg" alt="Andreea Mihalca" class="w-32 h-32 mx-auto mb-4 transition duration-300 ease-in-out transform rounded-full hover:scale-105 hover:opacity-80">
+        <h3 class="text-lg font-semibold">Andreea Mihalca</h3>
+        <p class="text-sm text-gray-700">Expertă în Design și Multimedia</p>
+        <p class="mt-2 text-sm text-gray-600">Specializată în manipulare foto, design grafic, fotografie, video, editare video, copywriting și branding.</p>
+      </div>
     </div>
-  </footer>
+  </div>
+</div>
+</div>
+<!--Contact Form-->
+<div class="max-w-md mx-auto text-center">
+    <strong>Colaborați cu Noi:</strong> <br><br>
+    Dacă sunteți interesați să colaborați cu noi pentru producția de conținut media sau alte servicii de publicitate și marketing digital, nu ezitați să ne contactați:
+    
+    <!-- Contact Form -->
+    <div data-aos="fade-up">
+    <div class="px-2 mt-4">
+      <form
+        action="https://formspree.io/f/xjvndkvg"
+        method="POST"
+        class="p-6 space-y-4 bg-gray-200 rounded-2xl "
+      >
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Emailul dumneavoastra:</label>
+          <input type="email" id="email" name="email" class="block w-full mt-1 border-gray-700 rounded-md shadow-lg focus:ring-blue-500 focus:border-blue-500" required>
+        </div>
+        <div>
+          <label for="message" class="block text-sm font-medium text-gray-700">Mesaj:</label>
+          <textarea id="message" name="message" rows="4" class="block w-full mt-1 border-gray-700 rounded-md shadow-lg focus:ring-blue-500 focus:border-blue-500" required></textarea>
+        </div>
+        <div>
+          <button type="submit" class="w-full px-4 py-2 font-bold text-white bg-gray-700 rounded hover:bg-gray-500">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+<footer class="p-6 text-center bg-gray-100" x-data>
+    <p class="m-2 mt-6 text-gray-700">
+      <span class="font-bold">Email:</span> contact@clickstudios.com <br>
+      <span class="font-bold">Telefon:</span> +4 0734 411 115 <br> 
+      <span class="font-bold">Adresa:</span> Nisiparilor 35, Baia-Mare, Maramures
+    </p>
+    <hr class="my-6 border-t border-gray-300">
+    <p class="text-gray-700">
+      &copy; <span x-text="new Date().getFullYear()"></span> Click Studios Digital. Toate drepturile rezervate.
+    </p>
+  </div>
+</footer>
+
+
 
  <!-- Arrow Up Button -->
     <button x-show="scrollToTop" @click="window.scrollTo({ top: 0, behavior: 'smooth' })" class="fixed flex items-center justify-center w-10 h-10 text-white bg-gray-800 rounded-full bottom-4 right-4 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-600">
@@ -439,5 +529,9 @@ Administrare și creștere a audienței pe canalele de social media prin postăr
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
         </svg>
     </button>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
