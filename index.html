@@ -50,7 +50,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/click studios logo.jpg" />
 
     <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com@latest"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Alpine.js -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -328,131 +328,139 @@
   <div class="container mx-auto">
     <h2 class="mb-8 text-3xl font-bold text-center">Portofoliu</h2>
     <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
       <!-- Portfolio Item 1 -->
-      <div data-aos="fade-right">
-      <a href="portfolio-item1.html" class="hover:no-underline">
-        <div class="px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
+      <div x-data="{ open: false }" data-aos="fade-right" class="mb-4">
+        <button @click="open = !open" class="w-full px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
+          <div class="flex justify-between">
+            <h3 class="text-lg font-semibold">Click Music Streaming App</h3>
+            <span x-show="!open" class="text-blue-500">+</span>
+            <span x-show="open" class="text-blue-500">-</span>
+          </div>
+        </button>
+        <div x-show="open" x-transition class="px-8 py-8 bg-white border border-t-0">
+          <a href="https://clickmusic.ro" target="_blank" class="hover:no-underline">
           <img src="/assets/clickmusicapp.jpg" alt="Click Music Streaming App" class="w-full h-auto transition duration-300 ease-in-out transform rounded-lg hover:scale-105 hover:opacity-80">
           <div class="p-4">
-            <h3 class="py-2 mb-2 text-lg font-semibold">Click Music Streaming App</h3>
             <p class="text-base leading-relaxed text-left">
               <span class="text-blue-500">✗</span> Click Music Streaming App este rezultatul eforturilor noastre constante de a crea soluții digitale de înaltă calitate, îmbunătățind experiența utilizatorilor în domeniul streaming-ului muzical. <br> <br>
               <span class="text-blue-500">✗</span> Dezvoltată folosind tehnologii avansate PHP/Laravel, această aplicație web oferă o experiență de streaming captivantă și ușor de folosit.
-        
               <br><br>
-        
               <strong>Caracteristici Cheie:</strong>
-        
               <ul class="mt-2 text-left list-disc">
                 <li>Sistem de Autentificare</li>
-  <li>Bază de Date Avansată</li>
-  <li>Notificări Mail și Database</li>
-  <li>Sectiune de Comentarii</li>
-  <li>Streaming cu CDN</li>
-  <li>Interfață Ușor de Utilizat</li>
-  <li>Securitate Avansată a Datelor</li>
+                <li>Bază de Date Avansată</li>
+                <li>Notificări Mail și Database</li>
+                <li>Sectiune de Comentarii</li>
+                <li>Streaming cu CDN</li>
+                <li>Interfață Ușor de Utilizat</li>
+                <li>Securitate Avansată a Datelor</li>
               </ul>
-        <br>
+              <br>
               <span class="text-blue-500">✗</span> Click Music Streaming App este un exemplu al angajamentului nostru față de excelență și inovație în dezvoltarea soluțiilor digitale, aducând muzica mai aproape de publicul său într-un mod interactiv și captivant.
             </p>
           </div>
         </div>
       </a>
-    </div>
-
-    <!-- Portfolio Item 2 -->
-    <div data-aos="fade-down">
-      <a href="https://www.youtube.com/@IoanaMihalca" class="hover:no-underline">
-        <div class="px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
-            <img src="/assets/podcastmorosenesc.jpg" alt="Productie Podcast Morosenesc cu Ioana Mihalca" class="w-full h-auto transition duration-300 ease-in-out transform rounded-lg hover:scale-105 hover:opacity-80">
-            <div class="p-4">
-                <h3 class="py-2 mb-2 text-lg font-semibold">Podcast Morosenesc cu Ioana Mihalca</h3>
-                <p class="text-base leading-relaxed text-left">
-                    <span class="text-blue-500">✗</span> "Podcast Morosenesc cu Ioana Mihalca" este un proiect de succes din portofoliul Click Studios, dedicat explorării povestirilor autentice și discuțiilor captivante. <br> <br>
-                    <span class="text-blue-500">✗</span> Acest podcast aduce în fața ascultătorilor povești de viață inspiratoare și conversații profunde cu personalități remarcabile din diverse domenii. <br><br>
-            
-                    <strong>Caracteristici Cheie:</strong>
-            
-                    <ul class="mt-2 text-left list-disc">
-                      <li><strong>Înregistrare și Editare:</strong> Utilizarea echipamentelor de ultimă generație pentru a asigura o calitate impecabilă a sunetului și o editare profesionistă. <br>
-                      </li>
-                      <li>
-                        <strong>Distribuție și Promovare:</strong> Implementarea unei strategii de marketing digital pentru a maximiza audiența și impactul podcastului. Disponibil pe Principalele Platforme de Podcasting(Spotify, Apple Podcasts, Google Podcasts) <br>
-  
-                      </li>
-                        <li>Strategii Eficiente de Marketing Digital</li>
-                    
-                        
-                    </ul>
-                  
-                    <br>
-                 
-                    <span class="text-blue-500">✗</span>"Podcast Morosenesc cu Ioana Mihalca" a contribuit la consolidarea brandului Click Studios, demonstrând capacitatea noastră de a crea conținut de calitate și de a gestiona proiecte media complexe. Acest proiect este un exemplu perfect al abilității noastre de a combina creativitatea si productia cu strategia de marketing digital pentru a obține rezultate remarcabile. <br><br>
-                   
-                </p>
-            </div>
-        </div>
-    </a>
       </div>
-
-         <!-- Portfolio Item 3 -->
-         <div data-aos="zoom-in-up">
-         <a href="https://www.youtube.com/@clickmusicromania" class="hover:no-underline">
-          <div class="px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
-            <img src="/assets/click youtube.jpg" alt="Click Music canal youtube" class="w-full h-auto transition duration-300 ease-in-out transform rounded-lg hover:scale-105 hover:opacity-80">
-            <div class="p-4">
-              <h3 class="py-2 mb-2 text-lg font-semibold">Click Music Canal Youtube
-              </h3>
-              <p class="text-base leading-relaxed text-left">
-                <span class="text-blue-500">✗</span> Suntem mândri să prezentăm Click Music Romania, un proiect emblematic în portofoliul nostru. <br> <br>
-                <span class="text-blue-500">✗</span> Acest canal YouTube reprezintă o extensie a serviciilor noastre, evidențiind expertiza noastră în crearea de conținut de cea mai înaltă calitate în domeniul muzicii și al vizualurilor captivante.
-
-          
-                <br><br>
-          
-                <strong>Caracteristici Cheie:</strong>
-          
-                <ul class="mt-2 text-left list-disc ">
-                  <li><strong>Producții Audio de Înaltă Calitate</strong>: Cu o echipă de producție audio experimentată, ne străduim să oferim sunete impecabile și mixaje profesionale care să îmbogățească experiența auditivă a publicului nostru.
-                  </li>
-    <li><strong>Videoclipuri Muzicale</strong>: Fiecare videoclip reprezintă o sinteză perfectă între muzică și imagine, capturând esența fiecărei piese.</li>
-   
-   
-                </ul>
-          <br>
-                <span class="text-blue-500">✗</span> Rezultate Demonstrabile: Canalul nostru, Click Music Romania, s-a remarcat prin obținerea a peste 50 de milioane de vizualizări, evidențiind eficacitatea și impactul strategiilor noastre de marketing în atragerea și implicarea publicului. Acest succes solidifică poziția noastră ca lideri în furnizarea de soluții de marketing digitale care generează rezultate tangibile și măsurabile pentru clienții noștri.
-              </p>
-            </div>
-          </div>
-        </a>
-         </div>
-
-    
-
-<!-- Portfolio Item 4-->
-<div data-aos="fade-right">
-<a href="#" class="hover:no-underline">
-  <div class="px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
-    <img src="/assets/digital-marketing.jpg" alt="marketing digital baia-mare" class="w-full h-auto transition duration-300 ease-in-out transform rounded-lg hover:scale-105 hover:opacity-80">
+  
+<!-- Portfolio Item 2 -->
+<div x-data="{ open: false }" data-aos="fade-down" class="mb-4">
+ 
+    <button @click="open = !open" class="w-full px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
+      <div class="flex justify-between">
+        <h3 class="text-lg font-semibold">Podcast Morosenesc</h3>
+        <span x-show="!open" class="text-blue-500">+</span>
+        <span x-show="open" class="text-blue-500">-</span>
+      </div>
+    </button>
+  <div x-show="open" x-transition class="px-8 py-8 bg-white border border-t-0">
+    <a href="https://www.youtube.com/@IoanaMihalca" target="_blank" class="hover:no-underline">
+    <img src="/assets/podcastmorosenesc.jpg" alt="Productie Podcast Morosenesc cu Ioana Mihalca" class="w-full h-auto transition duration-300 ease-in-out transform rounded-lg hover:scale-105 hover:opacity-80">
     <div class="p-4">
-      <h3 class="py-2 mb-2 text-lg font-semibold">Proiectul tău → Aici</h3>
       <p class="text-base leading-relaxed text-left">
-        <span class="text-blue-500">✗</span> Suntem mereu în căutarea unor noi provocări și oportunități de a contribui la proiecte creative și inovatoare. <br> <br>
-        <span class="text-blue-500">✗</span> Urmează să lansăm proiecte captivante în domenii precum dezvoltare web, branding, marketing digital, productie publicitara, producție audio si video și multe altele. <br> <br>
-        <span class="text-blue-500">✗</span> Dacă ai o idee sau un proiect la care crezi că putem aduce valoare și creativitate, nu ezita să ne contactezi. Suntem aici pentru a te ghitda incalatoria spre succesul digital.
+        <span class="text-blue-500">✗</span> "Podcast Morosenesc cu Ioana Mihalca" este un proiect de succes din portofoliul Click Studios, dedicat explorării povestirilor autentice și discuțiilor captivante. <br> <br>
+        <span class="text-blue-500">✗</span> Acest podcast aduce în fața ascultătorilor povești de viață inspiratoare și conversații profunde cu personalități remarcabile din diverse domenii. <br><br>
+        
+        <strong>Caracteristici Cheie:</strong>
+        
+        <ul class="mt-2 text-left list-disc">
+          <li><strong>Înregistrare și Editare:</strong> Utilizarea echipamentelor de ultimă generație pentru a asigura o calitate impecabilă a sunetului și o editare profesionistă. <br>
+          </li>
+          <li>
+            <strong>Distribuție și Promovare:</strong> Implementarea unei strategii de marketing digital pentru a maximiza audiența și impactul podcastului. Disponibil pe Principalele Platforme de Podcasting(Spotify, Apple Podcasts, Google Podcasts) <br>
+
+          </li>
+            <li>Strategii Eficiente de Marketing Digital</li>
+        
+            
+        </ul>
+      
+        <br>
+      
+        <span class="text-blue-500">✗</span>"Podcast Morosenesc cu Ioana Mihalca" a contribuit la consolidarea brandului Click Studios, demonstrând capacitatea noastră de a crea conținut de calitate și de a gestiona proiecte media complexe. Acest proiect este un exemplu perfect al abilității noastre de a combina creativitatea si productia cu strategia de marketing digital pentru a obține rezultate remarcabile. <br><br>
+       
       </p>
     </div>
   </div>
 </a>
 </div>
 
-<!--Portofolio item 5-->
-<div data-aos="fade-down">
-<a href="https://csvictoriamm.ro/" class="hover:no-underline">
-  <div class="px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
+    
+         <!-- Portfolio Item 3 -->
+<div x-data="{ open: false }" data-aos="zoom-in-up" class="mb-4">
+    <button @click="open = !open" class="w-full px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
+      <div class="flex justify-between">
+        <h3 class="text-lg font-semibold">Click Music Youtube</h3>
+        <span x-show="!open" class="text-blue-500">+</span>
+        <span x-show="open" class="text-blue-500">-</span>
+      </div>
+    </button>
+  <div x-show="open" x-transition class="px-8 py-8 bg-white border border-t-0">
+    <a href="https://www.youtube.com/@clickmusicromania" target="_blank" class="hover:no-underline">
+
+    <img src="/assets/click youtube.jpg" alt="Click Music canal youtube" class="w-full h-auto transition duration-300 ease-in-out transform rounded-lg hover:scale-105 hover:opacity-80">
+    <div class="p-4">
+      <p class="text-base leading-relaxed text-left">
+        <span class="text-blue-500">✗</span> Suntem mândri să prezentăm Click Music Romania, un proiect emblematic în portofoliul nostru. <br> <br>
+        <span class="text-blue-500">✗</span> Acest canal YouTube reprezintă o extensie a serviciilor noastre, evidențiind expertiza noastră în crearea de conținut de cea mai înaltă calitate în domeniul muzicii și al vizualurilor captivante.
+
+  
+        <br><br>
+  
+        <strong>Caracteristici Cheie:</strong>
+  
+        <ul class="mt-2 text-left list-disc ">
+          <li><strong>Producții Audio de Înaltă Calitate</strong>: Cu o echipă de producție audio experimentată, ne străduim să oferim sunete impecabile și mixaje profesionale care să îmbogățească experiența auditivă a publicului nostru.
+          </li>
+          <li><strong>Videoclipuri Muzicale</strong>: Fiecare videoclip reprezintă o sinteză perfectă între muzică și imagine, capturând esența fiecărei piese.</li>
+     
+     
+        </ul>
+  <br>
+        <span class="text-blue-500">✗</span> Rezultate Demonstrabile: Canalul nostru, Click Music Romania, s-a remarcat prin obținerea a peste 50 de milioane de vizualizări, evidențiind eficacitatea și impactul strategiilor noastre de marketing în atragerea și implicarea publicului. Acest succes solidifică poziția noastră ca lideri în furnizarea de soluții de marketing digitale care generează rezultate tangibile și măsurabile pentru clienții noștri.
+      </p>
+    </div>
+  </div>
+</a>
+
+</div>
+
+ <!-- Portfolio Item 4 -->
+<div x-data="{ open: false }" data-aos="fade-right" class="mb-4">
+    <button @click="open = !open" class="w-full px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
+      <div class="flex justify-between">
+        <h3 class="text-lg font-semibold">Branding CS Victoria MM</h3>
+        <span x-show="!open" class="text-blue-500">+</span>
+        <span x-show="open" class="text-blue-500">-</span>
+      </div>
+    </button>
+  </a>
+  <div x-show="open" x-transition class="px-8 py-8 bg-white border border-t-0">
+    <a href="https://csvictoriamm.ro/" target="_blank" class="hover:no-underline">
+
     <img src="/assets/victoria-maramures.jpg" alt="Branding Club Sportiv Victoria Maramureș" class="w-full h-auto transition duration-300 ease-in-out transform rounded-lg hover:scale-105 hover:opacity-80">
     <div class="p-4">
-      <h3 class="py-2 mb-2 text-lg font-semibold">Branding Club Sportiv Victoria Maramureș</h3>
       <p class="text-base leading-relaxed text-left">
         <span class="text-blue-500">✗</span> Proiectul de branding pentru Clubul Sportiv Victoria Maramureș a fost o călătorie fascinantă în definirea și exprimarea identității acestuia în mediul online și offline. <br> <br>
         <span class="text-blue-500">✗</span> Am dezvoltat un logo unic și memorabil care să reprezinte valorile și pasiunea clubului pentru sport, îmbinând tradiția cu modernitatea. <br> <br>
@@ -477,18 +485,51 @@
   </div>
 </a>
 </div>
+   
 
 
-<!-- Portfolio Item 6-->
-<div data-aos="zoom-in-up">
-<a href="#" class="hover:no-underline">
-  <div class="px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
+<!-- Portfolio Item 5 -->
+<div x-data="{ open: false }" data-aos="fade-down" class="mb-4">
+    <button @click="open = !open" class="w-full px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
+      <div class="flex justify-between">
+        <h3 class="text-lg font-semibold">Proiectul tău → Aici</h3>
+        <span x-show="!open" class="text-blue-500">+</span>
+        <span x-show="open" class="text-blue-500">-</span>
+      </div>
+    </button>
+  
+  <div x-show="open" x-transition class="px-8 py-8 bg-white border border-t-0">
+    <a href="#" target="_blank" class="hover:no-underline">
+
+    <img src="/assets/digital-marketing.jpg" alt="marketing digital baia-mare" class="w-full h-auto transition duration-300 ease-in-out transform rounded-lg hover:scale-105 hover:opacity-80">
+    <div class="p-4">
+      <p class="text-base leading-relaxed text-left">
+        <span class="text-blue-500">✗</span> Suntem mereu în căutarea unor noi provocări și oportunități de a contribui la proiecte creative și inovatoare. <br> <br>
+        <span class="text-blue-500">✗</span> Urmează să lansăm proiecte captivante în domenii precum dezvoltare web, branding, marketing digital, producție publicitară, producție audio și video și multe altele. <br> <br>
+        <span class="text-blue-500">✗</span> Dacă ai o idee sau un proiect la care crezi că putem aduce valoare și creativitate, nu ezita să ne contactezi. Suntem aici pentru a te ghida în călătoria spre succesul digital.
+      </p>
+    </div>
+  </div>
+</a>
+</div>
+
+<!-- Portfolio Item 6 -->
+<div x-data="{ open: false }" data-aos="zoom-in-up" class="mb-4">
+    <button @click="open = !open" class="w-full px-8 py-8 mb-8 transition duration-300 ease-in-out transform rounded-lg shadow-lg bg-gray-50 hover:-translate-y-2">
+      <div class="flex justify-between">
+        <h3 class="text-lg font-semibold">Proiectul tău → Aici</h3>
+        <span x-show="!open" class="text-blue-500">+</span>
+        <span x-show="open" class="text-blue-500">-</span>
+      </div>
+    </button>
+  <div x-show="open" x-transition class="px-8 py-8 bg-white border border-t-0">
+    <a href="#" target="_blank" class="hover:no-underline">
+
     <img src="/assets/digital-marketing2.jpg" alt="digital marketing baia mare" class="w-full h-auto transition duration-300 ease-in-out transform rounded-lg hover:scale-105 hover:opacity-80">
     <div class="p-4">
-      <h3 class="py-2 mb-2 text-lg font-semibold">Proiectul tău → Aici</h3>
       <p class="text-base leading-relaxed text-left">
         <span class="text-blue-500">✗</span> Suntem în faza de planificare pentru noi proiecte incitante care vor schimba peisajul digital. <br> <br>
-        <span class="text-blue-500">✗</span> Ne pregătim să aducem inovație in proiectul tau prin noi idei și concepte creative de branding si promovare digitala. <br> <br>
+        <span class="text-blue-500">✗</span> Ne pregătim să aducem inovație în proiectul tău prin noi idei și concepte creative de branding și promovare digitală. <br> <br>
         <span class="text-blue-500">✗</span> Rămâi conectat pentru a fi primul care află despre noile noastre proiecte și pentru a te implica în construirea viitorului digital împreună cu noi.
       </p>
     </div>
@@ -557,7 +598,7 @@
 
 <footer class="text-center bg-gray-100" x-data>
     <p class="m-2 mt-6 text-gray-700">
-      <span class="font-bold">Email:</span> contact@clickstudios.com <br>
+      <span class="font-bold">Email:</span> contact@clickstudios-digital.com <br>
       <span class="font-bold">Telefon:</span> +4 0734 411 115 <br> 
       <span class="font-bold">Adresa:</span> Nisiparilor 35, Baia-Mare, Maramures
     </p>
