@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Redirect from http:// and https://www to https://
+RewriteCond %{HTTP_HOST} ^www\.clickstudios-digital\.com [NC]
+RewriteRule ^(.*)$ https://clickstudios-digital.com/$1 [L,R=301]
+
+# Redirect from http:// to https://
+RewriteCond %{HTTP_HOST} ^clickstudios-digital\.com [NC]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://clickstudios-digital.com/$1 [L,R=301]
