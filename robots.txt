@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Allow: /blog/
+Allow: /blog/posts/
+Sitemap: https://clickstudios-digital.com/sitemap.xml
